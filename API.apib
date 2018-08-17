@@ -1,0 +1,62 @@
+# API ./snowboard html -o output.html API.apib
+ This is the Robloxian API for now it requires a token to be used. <br/>
+ The token can be directly requested from me on discord **TheSongList#0001**
+## Base UR
++ Main URL - https://api.songlist.moe/api/token/
++ Token - The API token
+# Images [/{title}]
+ These are the image requests!
+## cat [GET]
+ This will deliver a random cat image url.
++ Response 200 (application/json)
+
+ {
+  "cat": "https://cdn.songlist.moe/images/cat/BaETngD.jpeg"
+ }
+
+## nya [GET]
+ This will deliver a random cat girl image url.
++ Response 200 (application/json)
+
+ {
+  "nya": "https://cdn.songlist.moe/images/nya/gUbQQVx.jpg"
+ }
+
+## pat [GET]
+ This will deliver a random pat image url.
++ Response 200 (application/json)
+
+ {
+  "pat": "https://cdn.songlist.moe/images/pat/pO9PJad.jpeg"
+ }
+
+## robloxian [GET]
+ This will deliver a random robloxian image url.
++ Response 200 (application/json)
+
+ {
+  "robloxian": "https://cdn.songlist.moe/images/robloxian/nnRwHND.png"
+ }
+
+## slap [GET]
+ This will deliver a random slap image url.
++ Response 200 (application/json)
+
+ {
+  "slap": "https://cdn.songlist.moe/images/slap/4lJwUEc.gif"
+ }
+
+# Generators [/{title}]
+ These allow you to make custom images & gifs!
+## trump [GET]
+ This will create a trump tweet image. Just replace the /text/ parameter with any text!
++ Parameters
+    + text (string) - The text you want to appear in the tweet.
++ Response 200 (image/png)
+
+## triggered [GET]
+ This will create a triggered gif. You have to send a header "avatar" with the image url.
+
++ Response 200 (image/png)
+    + Headers
+            avatar: the url of the avatar
